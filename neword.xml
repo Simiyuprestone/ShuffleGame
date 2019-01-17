@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal"
+	android:background="#9c4f4f"
+	>
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="#b40aa0"
+        android:gravity="center"
+        android:text="Type Word"
+        android:textColor="#0909d2"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+	<TextView
+		android:layout_width="200dp"
+		android:layout_height="60dp"
+		android:gravity="left"
+		android:textColor="#0909d2"
+		android:textSize="30dp"
+        android:layout_below="@+id/textview1"
+        android:layout_marginTop="20dp"
+		android:text="Correct"
+
+		android:textStyle="bold"
+		android:id="@+id/textview2"
+        android:visibility="visible"
+
+		/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:textColor="#0909d2"
+        android:textSize="40dp"
+        android:hint="Type Answer"
+        android:layout_below="@id/textview2"
+        android:background="#efeaef"
+        android:textStyle="bold"
+        android:id="@+id/edittext1"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_margin="40dp"
+        android:textColor="#0909d2"
+        android:textSize="40dp"
+        android:text="Set word"
+        android:layout_below="@id/edittext1"
+        android:background="#0a090a"
+        android:textStyle="bold"
+        android:id="@+id/button1"
+        android:onClick="add"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:id="@+id/imagecorrect"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textview1"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/textview2"
+        android:visibility="visible"
+        android:src="@drawable/tick"
+        />
+	/>
+
+
+</RelativeLayout>
